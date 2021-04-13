@@ -1,0 +1,19 @@
+
+<div>
+    <form [formGroup]="userData" class="box"(ngSubmit)="submitData2()">
+        <h1>Register</h1>
+
+        <input type="text" placeholder="Enter Username" formControlName="username">
+        <input type="text" placeholder="Enter Password" formControlName="password">
+        <input type="text" placeholder="Enter FirstName" formControlName="firstName">
+        <input type="text" placeholder="Enter LastName" formControlName="lastname">
+        <input type="text" placeholder="Enter Email" formControlName="email">
+        <input type="text" placeholder="Enter Phone" formControlName="phone">
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div *ngIf="flag==1">
+    <h2>{{data.status}}</h2>
+</div>

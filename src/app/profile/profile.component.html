@@ -1,0 +1,17 @@
+
+<!--<div *ngIf="getProfileData()">{{profileData}}</div>
+<div *ngIf="flag==1">
+    <h2>{{getProfileData().profile}}</h2>
+</div>-->
+<div class="head">
+    <h1>Your Profile</h1><br>
+    <div class="wrapper"><div class="left_row">Username    :</div><div class="right_row"> {{profileData.username}}</div></div>
+    <div class="wrapper"><div class="left_row">Password    :</div><div class="right_row"> {{profileData.password}}</div></div>
+    <div class="wrapper"><div class="left_row">First Name  : </div><div class="right_row">{{profileData.firstName}}</div></div>
+    <div class="wrapper"><div class="left_row">Last Name   : </div><div class="right_row">{{profileData.lastname}}</div></div>
+    <div class="wrapper"><div class="left_row">Email       : </div><div class="right_row">{{profileData.email}}</div></div>
+    <div class="wrapper"><div class="left_row">Phone Number: </div><div class="right_row">{{profileData.phone}}</div></div>
+    <!--<h4>Menu: </h4>
+    <img src="data:image/gif;base64,{{profileData.menuimage.$binary}}" width="400" height="400">-->
+</div>
+<!-- <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->

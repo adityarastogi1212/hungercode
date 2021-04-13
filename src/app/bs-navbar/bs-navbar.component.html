@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-md navbar-black bg-dark fixed-top">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div *ngIf="setStatus()==true" class="collapse navbar-collapse" id="navbarsExampleDefault1">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/profile">Profile</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div *ngIf="setStatus()==true" class="collapse navbar-collapse" id="navbarsExampleDefault3">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/view-menu">View Menu</a>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="setStatus()==true" class="collapse navbar-collapse" id="navbarsExampleDefault1">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/upload-image">Upload Image</a>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="setStatus()==true" class="collapse navbar-collapse" id="navbarsExampleDefault2">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/download-qr-code">Download Qr Code</a>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="setStatus()==false" class="collapse navbar-collapse" id="navbarsExampleDefault4">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="setStatus()==false" class="collapse navbar-collapse" id="navbarsExampleDefault5">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/register">Register</a>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="setStatus()==true" class="collapse navbar-collapse" id="navbarsExampleDefault5">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item1">Welcome {{username}}</li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<body></body>

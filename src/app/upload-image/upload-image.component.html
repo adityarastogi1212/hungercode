@@ -1,0 +1,27 @@
+<h1>Upload Menu Image</h1>
+<div>
+    <ul>
+        <li *ngFor="let file of files">
+            
+            <span id="file-label">
+                {{file.data.name}}
+            </span>
+        </li>
+    </ul>
+
+    <!--<img [src]="url" width="100" height="100" alt="">
+    <input type="file" (change)="selectFile($event)">
+    <br>
+    <br>-->
+
+    <button (click)="onClick()">
+        Upload
+    </button>
+    <input type="file" #fileUpload id="fileUpload" name="fileUpload" multiple="multiple" accept="image/*" style="display:none;" />
+    <!--change this in above line -->
+    <!--accept="image/*" (change)="handleFileInput($event.target.files)"-->
+
+    <!--<div class="alert alert-info" *ngIf="done">
+        <strong>{{message}}</strong>
+    </div>-->
+</div>
