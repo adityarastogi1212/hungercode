@@ -23,6 +23,7 @@ export class WebService
     image_url:string;
     profile_url:string;
     qrcode_url:string;
+    downloadqr_url:string;
 
     retrieveUserProfile(){
         this.profile_url=this.getUrl(this.retreiveUsername(),"viewprofiledata");
@@ -37,6 +38,12 @@ export class WebService
         console.log(this.qrcode_url);
         return this.http.get(this.qrcode_url);
         
+    }
+
+    qrcodedownload(){
+        this.downloadqr_url=this.baseUrl+this.retreiveUsername()+"/menuimage/qrcodedownload";
+        console.log(this.downloadqr_url);
+        window.open(this.downloadqr_url);
     }
 
     retriveData(webData:any)
