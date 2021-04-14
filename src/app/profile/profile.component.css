@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 h1{
     color: darkblue;
     text-align: center;
@@ -17,7 +16,7 @@ h1{
     display: grid;
     grid-template-columns: 50% 50%;
     font-size: x-large;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 .wrapper > div:nth-child(even){
