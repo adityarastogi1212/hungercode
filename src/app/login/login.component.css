@@ -5,7 +5,7 @@ h2{
     font-family: sans-serif;
 }
 .box{
-    width: 300px;
+    width: 310px;
     padding: 30px;
     position: absolute;
     top: 50%;
@@ -53,4 +53,14 @@ h2{
 }
 .box button[type="submit"]:hover{
     background: #ffc400ec;
+}
+a{
+    display: inline;
+    font-size: small;
+}
+.gen{
+    color: aliceblue;
+}
+.nav-link{
+    color: blue;
 }
