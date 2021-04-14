@@ -13,3 +13,6 @@ img{
     transform: translate(-50%,-50%);
     background: rgba(12, 4, 4, 0.767);
 }
+a{
+    margin-top: 600px;
+}
