@@ -1,6 +1,9 @@
 .nav-item1{
-    color: crimson;
+    color:greenyellow;
 }
 a.active{
     color: crimson;
+}
+.dropdown{
+    padding-left: 50px;
 }
