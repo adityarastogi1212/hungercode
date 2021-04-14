@@ -5,7 +5,7 @@ h1{
     text-align: center;
 }
 .head{
-    width: 1000px;
+    width: 700px;
     padding: 10px;
     position: absolute;
     top: 50%;
@@ -22,4 +22,5 @@ h1{
 }
 .wrapper > div:nth-child(even){
     color: navy;
+    word-wrap: break-word;
 }
