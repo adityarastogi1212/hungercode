@@ -1,3 +1,10 @@
-<h1>download-qr-code works!</h1>
-<!--<h2>Welcome {{dataname}} !</h2>-->
+<!--<h1>download-qr-code works!</h1>
+<h2>Welcome {{dataname}} !</h2>
+<button type="submit" (ngSubmit)="https://restaurantserverside.herokuapp.com/demo/menuimage/qrcodedownload">Download QR Code</button>
+-->
 <img src="data:image/gif;base64,{{profileData.$binary}}">
+
+<!-- <form action="https://google.com">
+    <input type="submit" value="Download QR Code" />
+</form> -->
+<a (click)="download()" class="btn btn-primary">Download Qr Code</a>
