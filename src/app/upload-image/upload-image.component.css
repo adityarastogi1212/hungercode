@@ -1,7 +1,13 @@
-h1{
-    padding-top: 80px;
-}
+
 div{
-    padding-top: 85px;
-    color: rgb(255, 0, 0);
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.767);
+    text-align: center;
+    word-wrap: normal;
+
 }

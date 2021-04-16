@@ -1,0 +1,31 @@
+.details{
+    color:rgb(0, 0, 0);
+    font-size: large;
+    position: relative;
+    padding-top: 50px;
+
+}
+.contents{
+    color:rgb(0, 0, 0);
+    font-size: large;
+    position: relative;
+    padding-top: 50px;
+}
+.box{
+    width: 800px;
+    padding: 30px;
+    padding-top: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.767);
+    text-align: center;
+    word-wrap: break-word;
+    font-size: large;
+    font-weight: 500;
+}
+.admin2{
+    position: relative;
+    padding-top: 30px;
+}

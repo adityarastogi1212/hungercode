@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit {
     if(this.demoname!=""){
       this.api.retriveRegister(this.userData).subscribe(response=>this.data=response);
       this.flag=1;
-      setTimeout(() => this.router.navigate(['login']),2000);
+      // setTimeout(() => this.router.navigate(['login']),2000);
     }
     
   }

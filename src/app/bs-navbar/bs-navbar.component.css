@@ -1,6 +1,17 @@
-.nav-item1{
-    color: crimson;
+.btn.btn-primary.dropdown-toggle{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: 500;
 }
 a.active{
     color: crimson;
+}
+/* .dropdown{
+    padding-left: 50px;
+} */
+
+.nav-link{
+    font-size: large;
+    font-weight: 500;
+    /* letter-spacing: 2px; */
 }

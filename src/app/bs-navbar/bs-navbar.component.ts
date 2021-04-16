@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { WebService } from '../WebService';
 
 @Component({
@@ -11,7 +12,7 @@ export class BsNavbarComponent implements OnInit {
   //display=false;
   username:any;
 
-  constructor(private service: WebService) { }
+  constructor(private service: WebService,private router:Router) { }
 
   ngOnInit(): void {
     
@@ -25,7 +26,11 @@ export class BsNavbarComponent implements OnInit {
     return this.service.giveStatus();
   }
 
-  
+  logout(){
+    this.router.navigate(['login'])
+    .then(() => {
+      window.location.reload();
+    });  }
 
 }
 
