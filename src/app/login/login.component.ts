@@ -23,10 +23,6 @@ export class LoginComponent implements OnInit {
   });
 
   ngOnInit(): void {
-    //to remove undefined status error used in html
-    // if(this.retrieveUsername()!=""){
-    //   this.api.retriveLogin(this.userData).subscribe(response=>this.data=response);
-    // }
     this.api.retriveLogin(this.userData).subscribe(response=>this.data=response);
   }
 
@@ -43,9 +39,9 @@ export class LoginComponent implements OnInit {
             console.log(this.retrieveUsername1());
             this.router.navigate([`${pageName}`]);
           }
-        else{
-            this.router.navigate(['register']);
-        }
+        // else{
+        //     if(confirm("Wrong Username or Password")) {}
+        //   }
         },2000);
     }
     

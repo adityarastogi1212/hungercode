@@ -5,17 +5,17 @@ h2{
     font-family: sans-serif;
 }
 .box{
-    width: 300px;
+    width: 310px;
     padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: rgba(12, 4, 4, 0.767);
+    background: rgba(0, 0, 0, 0.767);
     text-align: center;
 }
 .box h1{
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -29,7 +29,7 @@ h2{
     padding: 14px 10px;
     width: 220px;
     outline: none;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 24px;
     transition: 0.25px;
 }
@@ -46,11 +46,27 @@ h2{
     border: 3px solid #ffc400ec;
     padding: 14px 35px;
     outline: none;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 24px;
     transition: 0.25px;
     cursor: pointer;
 }
 .box button[type="submit"]:hover{
     background: #ffc400ec;
+}
+a{
+    display: inline;
+    font-size: small;
+}
+.gen{
+    color: rgb(255, 255, 255);
+}
+.nav-link{
+    color: blue;
+}
+p{
+    color: red;
+}
+.success{
+    color: rgb(21, 156, 21);
 }

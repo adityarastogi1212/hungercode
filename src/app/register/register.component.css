@@ -55,3 +55,16 @@ h2{
 .box button[type="submit"]:hover{
     background: #ffc400ec;
 }
+a{
+    display: inline;
+    font-size: small;
+}
+.gen{
+    color: aliceblue;
+}
+.nav-link{
+    color: blue;
+}
+p{
+    color:rgb(31, 184, 31);
+}

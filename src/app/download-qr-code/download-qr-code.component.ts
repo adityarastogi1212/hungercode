@@ -10,6 +10,7 @@ export class DownloadQrCodeComponent implements OnInit {
 
   dataname:any;
   profileData: any;
+  qrdata:any;
   
 
   constructor(private service: WebService) { }
@@ -22,5 +23,8 @@ export class DownloadQrCodeComponent implements OnInit {
     console.log(this.profileData);
   }
   
+  download(){
+      this.service.qrcodedownload();
+    }
 
 }

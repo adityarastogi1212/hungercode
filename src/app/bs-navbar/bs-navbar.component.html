@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-black bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-black bg-light fixed-top">
   <div class="container-fluid">
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +53,15 @@
       </ul>
     </div>
 
-    <div *ngIf="setStatus()==true" class="collapse navbar-collapse" id="navbarsExampleDefault5">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item1">Welcome {{username}}</li>
-      </ul>
+    <div *ngIf="setStatus()==true" ngbDropdown class="dropdown">
+      <button ngbDropdownToggle class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Welcome {{username}}
+      </button>
+      <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a ngbDropdownItem class="dropdown-item" routerLink ="/contact-us">Contact Us</a>
+        <a ngbDropdownItem class="dropdown-item" (click)="logout()">Log Out</a>
+        <!--<a ngbDropdownItem class="dropdown-item" routerLink ="#">Something else here</a>-->
+      </div>
     </div>
 
   </div>

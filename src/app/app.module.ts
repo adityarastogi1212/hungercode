@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { WebService } from './WebService';
 import { ProfileComponent } from './profile/profile.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProfileComponent } from './profile/profile.component';
     RegisterComponent,
     UploadImageComponent,
     ViewMenuComponent,
-    ProfileComponent
+    ProfileComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { ProfileComponent } from './profile/profile.component';
       { path:'',component:LoginComponent},
       { path:'login',component:LoginComponent},
       { path:'register',component:RegisterComponent},
-      { path:'profile',component:ProfileComponent}
+      { path:'profile',component:ProfileComponent},
+      { path:'contact-us',component:ContactUsComponent}
     ]),
   ],
   providers: [WebService],

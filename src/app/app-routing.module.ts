@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DownloadQrCodeComponent } from './download-qr-code/download-qr-code.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path:'view-menu', component: ViewMenuComponent},
   { path:'register', component: RegisterComponent},
   { path:'login', component: LoginComponent},
-  { path:'profile', component: ProfileComponent}
+  { path:'profile', component: ProfileComponent},
+  { path:'contact-us', component:ContactUsComponent}
 ];
 
 @NgModule({
