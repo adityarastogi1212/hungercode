@@ -24,8 +24,10 @@ export class WebService
     profile_url:string;
     qrcode_url:string;
     downloadqr_url:string;
+    delete_url:string;
 
     retrieveUserProfile(){
+        // this.profile_url=this.getUrl(this.retreiveUsername(),"viewprofiledata");
         this.profile_url=this.getUrl(this.retreiveUsername(),"viewprofiledata");
         //console.log((this.profile_url));
         return this.http.get(this.profile_url);
@@ -44,6 +46,14 @@ export class WebService
         this.downloadqr_url=this.baseUrl+this.retreiveUsername()+"/menuimage/qrcodedownload";
         console.log(this.downloadqr_url);
         window.open(this.downloadqr_url);
+    }
+
+    deleterequest(){
+        let headers;
+        let body={};
+        this.delete_url=this.getUrl(this.retreiveUsername(),"deletemenuimage");
+        console.log(this.delete_url);
+        return this.http.post<any>(this.delete_url,body,{headers});
     }
 
     retriveData(webData:any)
