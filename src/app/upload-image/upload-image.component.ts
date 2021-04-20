@@ -13,6 +13,9 @@ export class UploadImageComponent implements OnInit
 {
   @ViewChild("fileUpload", {static: false}) fileUpload: ElementRef;
   files  = [];
+  status:any;
+  data:any;
+  flag=0;
   //url = "https://avatars.githubusercontent.com/u/56511496?s=400&u=79abd025d17090bc11ba7a49c5b3c551b4b9c172&v=4";
   //message: string;
   //done: boolean;
@@ -54,8 +57,11 @@ export class UploadImageComponent implements OnInit
       file.inProgress = true;
       this.uploadService.sendFormData(formData).subscribe((event: any) => {
           if (typeof (event) === 'object') {
+            // this.status = setTimeout(()=>event.body.status,2000);
+            // this.flag=1;
             console.log(event.body);
-          } //else {
+          }
+          //else {
             //this.done=true;
             //this.message= "Image Uploaded Succeccfully";
           //}
@@ -83,6 +89,12 @@ export class UploadImageComponent implements OnInit
   this.sendFiles();
   };
   fileUpload.click();
+  }
+
+  onClick2()
+  {
+    this.uploadService.deleterequest().subscribe(response=>this.data=response);
+    // setTimeout(() => console.log(this.data),2000);
   }
 
 }
