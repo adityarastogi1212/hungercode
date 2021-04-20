@@ -1,5 +1,5 @@
 
-<div>
+<div class="gen">
     <h1>Upload Menu Image</h1>
     <ul>
         <li *ngFor="let file of files">
@@ -17,8 +17,15 @@
 
     <button (click)="onClick()" class="btn btn-primary">
         Upload
-    </button>
+    </button><br><br>
     <input type="file" #fileUpload id="fileUpload" name="fileUpload" multiple="multiple" accept="image/*" style="display:none;" />
+    <!-- <h6>{{status}}</h6> -->
+    <!-- <div *ngIf="flag==1">
+        <h6>{{status}}</h6>
+    </div> -->
+    <button (click)="onClick2()" class="btn btn-primary" style="background-color:red">
+        Delete all images
+    </button>
     <!--change this in above line -->
     <!--accept="image/*" (change)="handleFileInput($event.target.files)"-->
 
