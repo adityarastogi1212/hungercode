@@ -3,12 +3,21 @@
     <form [formGroup]="userData" class="box"(ngSubmit)="submitData2()">
         <h1>Register</h1>
 
-        <input type="text" placeholder="Enter Username" formControlName="username">
-        <input type="text" placeholder="Enter Password" formControlName="password">
-        <input type="text" placeholder="Enter FirstName" formControlName="firstName">
-        <input type="text" placeholder="Enter LastName" formControlName="lastname">
-        <input type="text" placeholder="Enter Email" formControlName="email">
-        <input type="text" placeholder="Enter Phone" formControlName="phone">
+        <input type="text" placeholder="Enter Username" formControlName="username" required>
+        <input type="text" placeholder="Enter Password" formControlName="password" required>
+        <input type="text" placeholder="Enter FirstName" formControlName="firstName" required>
+        <input type="text" placeholder="Enter LastName" formControlName="lastname" required>
+        <input type="text" placeholder="Enter Email" formControlName="email" required>
+        <input type="text" placeholder="Enter Phone" formControlName="phone" required>
+        <select formControlName="subscription" class="ui dropdown" required>
+            <option disabled>Select Subscription</option>
+            <option>Basic</option>
+            <!-- <option *ngFor="let web of websiteList">{{web}}</option> -->
+            <option disabled>Gold</option>
+        </select>
+        <!-- <div *ngIf="f.website.touched && f.website.invalid" class="alert alert-danger">
+            <div *ngIf="f.website.errors.required">Name is required.</div>
+        </div> -->
         <div *ngIf="flag==1">
             <p *ngIf="data.status==true">Registered Successfully</p>
             <p *ngIf="data.status!=true">User Already Exists</p>
