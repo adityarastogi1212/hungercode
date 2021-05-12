@@ -23,7 +23,7 @@ export class WebService
     image_url:string;
     profile_url:string;
     qrcode_url:string;
-    downloadqr_url:string;
+    downloadqr_url:str
     delete_url:string;
 
     retrieveUserProfile(){
@@ -55,6 +55,7 @@ export class WebService
         console.log(this.delete_url);
         return this.http.post<any>(this.delete_url,body,{headers});
     }
+
 
     retriveData(webData:any)
     {
