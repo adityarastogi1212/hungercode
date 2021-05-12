@@ -1,18 +1,23 @@
-h1{
+/* h1{
     padding-top: 80px;
     color: darkblue;
 }
 h2{
     padding-top: 90px;
     color:darkblue;
-}
-img{
+} */
+.body{
+    width: 500px;
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: rgba(12, 4, 4, 0.767);
+    background: rgba(255, 255, 255, 0.767);
+    text-align: center;
 }
-a{
-    margin-top: 600px;
+.content{
+    position: relative;
+    padding-top: 40px;
 }
+

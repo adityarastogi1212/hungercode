@@ -1,7 +1,11 @@
 
 <!--<img [src]="url" width="200" height="200" alt="">-->
 
-<div>
-    <h1>Your Menu</h1><br>
-    <img src="data:image/gif;base64,{{profileData.menuimage.$binary}}" width="550" height="550">
+<div class="gen">
+    <h1>Menu Image</h1><br>
+    <!-- <img src="data:image/gif;base64,{{profileData.menuimage.$binary}}" width="550" height="550"> -->
+    <!-- <div width="550" height="550" ></div> -->
+    <table *ngFor="let aws_image_url of profileData.aws_image_urls">
+        <tr><th><img src="{{aws_image_url}}"></th></tr>
+    </table> 
 </div>

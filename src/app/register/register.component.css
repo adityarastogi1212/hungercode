@@ -5,7 +5,7 @@ h2{
     font-family: sans-serif;
 }
 .box{
-    margin-top: 30px;
+    margin-top: 100px;
     width: 320px;
     padding: 20px;
     position: absolute;
@@ -20,7 +20,7 @@ h2{
     text-transform: uppercase;
     font-weight: 700;
 }
-.box input[type="text"],.box input[type="password"]{
+.box input[type="text"],.box input[type="password"],.box select{
     border: 0;
     background: none;
     display: block;
@@ -30,11 +30,11 @@ h2{
     padding: 14px 10px;
     width: 220px;
     outline: none;
-    color: white;
+    color:white;
     border-radius: 24px;
     transition: 0.25px;
 }
-.box input[type="text"]:focus,.box input[type="password"]:focus{
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box select:focus{
     width: 240px;
     border-color: #ffc400ec;
 }
@@ -64,4 +64,10 @@ a{
 }
 .nav-link{
     color: blue;
+}
+p{
+    color:rgb(31, 184, 31);
+}
+option{
+    background: black;
 }

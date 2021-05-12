@@ -5,16 +5,21 @@
     
         <input type="text" placeholder="Enter Username" formControlName="username">
         <input type="text" placeholder="Enter Password" formControlName="password">
+        <div *ngIf="flag==1">
+            <p *ngIf="data.status==false">Incorrect Username or Password</p>
+            <p class="success" *ngIf="data.status==true">Logged In Successfully</p>
+        </div>
         <a class="gen">Don't have a account?<a class="nav-link" routerLink="/register">Register</a></a>
 
-        <button type="submit">Submit</button>
+        <button type="submit" >Submit</button>
+
 
     </form>
 </body>
     
-    
-<footer *ngIf="flag==1">
-    <h2>{{data.status}}</h2>
-</footer>
+<!-- <p *ngIf="flag==1">
+    <p>{{data.status}}</p>
+</p> -->
 
 
+<!-- (click)="clickMethod()" -->
