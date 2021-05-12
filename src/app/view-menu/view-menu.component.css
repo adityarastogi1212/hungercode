@@ -1,9 +1,12 @@
 
 h1{
     padding-top: 50px;
-    color: darkblue;
     text-align: center;
+    color: darkblue;
 }
+/* table{
+    align-items: center;
+} */
     /* margin-top: 33%; */
 .gen{
     /* width: 800px;
@@ -14,9 +17,10 @@ h1{
     transform: translate(-50%,-50%);
     background: rgba(255, 255, 255, 0.767);
     text-align: center; */
-/*     display: flex;
+    /* display: flex;
     justify-content: center;
     height: 100vh; */
+    align-items: center;
 }
 .content{
     align-self: center;
