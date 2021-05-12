@@ -7,7 +7,8 @@
         <input type="text" placeholder="Enter Password" formControlName="password">
         <div *ngIf="flag==1">
             <p *ngIf="data.status==false">Incorrect Username or Password</p>
-            <p class="success" *ngIf="data.status==true">Logged In Successfully</p>
+<!--          <p class="success" *ngIf="data.status==true">Logged In Successfully</p> -->
+            <p class="success">{{output}}</p>
         </div>
         <a class="gen">Don't have a account?<a class="nav-link" routerLink="/register">Register</a></a>
 
